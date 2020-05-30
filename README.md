@@ -3,6 +3,7 @@
 A battery powered (3 AA batteries) sensor node that detects motion via PIR, sending a signal via a 433MHz transmitter using OOK. In the absence of motion, the node gives periodic reports of temperature, relative humidity (via a DHT-11) and battery voltage. Transmission is uni-directional, so you need a reliable receiver for effective use but the range is sufficient to span a brick house using a half-wavelength antenna on the receiver.
 
 ![ATTiny85 RF node](./node.jpg)
+![HomeAssistant example](./HA.png)
 
 ## Getting Started
 
