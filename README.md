@@ -8,9 +8,11 @@ A battery powered (3 AA batteries) sensor node that detects motion via PIR, send
 
 Components: ATTiny85, HC-SR501 PIR Sensor, DHT-11, led (optional), a 433MHz transmitter.
 
+The led is useful across the TX line to give an indication of RF transmission.
+
 ### Battery life
 
-The tricky parts for this sort of set up are (i) battery life and (ii) false triggering the PIR sensor via the 433MHz transmitter. For (i) we try to put the ATTiny into as low a power state as possible, only using interrupts and the watch dog timer for wakeup. For (ii) we explicitly disable the PIR interrupt when transmitting.
+The tricky parts for this sort of set up are (i) battery life and (ii) false triggering the PIR sensor via the 433MHz transmitter. For (i) we try to put the ATTiny into as low a power state as possible, only using interrupts and the watch dog timer for wakeup. For (ii) we explicitly disable the PIR interrupt when transmitting. Battery life depends on the level of activation, but should be over a year for 3 standard alkaline AA batteries.
 
 ### Prerequisites
 
